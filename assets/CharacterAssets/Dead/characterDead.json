@@ -1,0 +1,167 @@
+{
+	"textures": [
+		{
+			"image": "characterDead.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 23,
+				"h": 175
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "adventurer-die-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 11,
+						"w": 19,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 19,
+						"h": 26
+					}
+				},
+				{
+					"filename": "adventurer-die-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 11,
+						"w": 18,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 29,
+						"w": 18,
+						"h": 26
+					}
+				},
+				{
+					"filename": "adventurer-die-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 11,
+						"w": 21,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 57,
+						"w": 21,
+						"h": 26
+					}
+				},
+				{
+					"filename": "adventurer-die-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 13,
+						"w": 21,
+						"h": 24
+					},
+					"frame": {
+						"x": 1,
+						"y": 85,
+						"w": 21,
+						"h": 24
+					}
+				},
+				{
+					"filename": "adventurer-die-04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 17,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 111,
+						"w": 19,
+						"h": 20
+					}
+				},
+				{
+					"filename": "adventurer-die-05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 20,
+						"y": 18,
+						"w": 16,
+						"h": 19
+					},
+					"frame": {
+						"x": 1,
+						"y": 133,
+						"w": 16,
+						"h": 19
+					}
+				},
+				{
+					"filename": "adventurer-die-06.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 17,
+						"y": 17,
+						"w": 19,
+						"h": 20
+					},
+					"frame": {
+						"x": 1,
+						"y": 154,
+						"w": 19,
+						"h": 20
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:faec35f6c319a9f7ef35fa320d49f35b:896d495372174088ff4f606d607c2557:1a0107dc5ca111fe306781ef2a0bbe46$"
+	}
+}

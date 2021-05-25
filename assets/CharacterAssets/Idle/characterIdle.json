@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "characterIdle.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 91,
+				"h": 34
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "adventurer-idle-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 6,
+						"w": 21,
+						"h": 31
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 21,
+						"h": 31
+					}
+				},
+				{
+					"filename": "adventurer-idle-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 5,
+						"w": 19,
+						"h": 32
+					},
+					"frame": {
+						"x": 24,
+						"y": 1,
+						"w": 19,
+						"h": 32
+					}
+				},
+				{
+					"filename": "adventurer-idle-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 5,
+						"w": 21,
+						"h": 32
+					},
+					"frame": {
+						"x": 45,
+						"y": 1,
+						"w": 21,
+						"h": 32
+					}
+				},
+				{
+					"filename": "adventurer-idle-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 6,
+						"w": 22,
+						"h": 31
+					},
+					"frame": {
+						"x": 68,
+						"y": 1,
+						"w": 22,
+						"h": 31
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:e3ab5762cc58a457136792cc3064171c:20c8218ca124f75a1a7745c88b3e39d1:2e31c74dd6832c07b6a1c8b27d7505e3$"
+	}
+}

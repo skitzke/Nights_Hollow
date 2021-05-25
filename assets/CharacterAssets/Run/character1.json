@@ -1,0 +1,146 @@
+{
+	"textures": [
+		{
+			"image": "character1.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 147,
+				"h": 32
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "adventurer-run-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 7,
+						"w": 22,
+						"h": 30
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 22,
+						"h": 30
+					}
+				},
+				{
+					"filename": "adventurer-run-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 8,
+						"w": 22,
+						"h": 29
+					},
+					"frame": {
+						"x": 25,
+						"y": 1,
+						"w": 22,
+						"h": 29
+					}
+				},
+				{
+					"filename": "adventurer-run-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 10,
+						"w": 22,
+						"h": 27
+					},
+					"frame": {
+						"x": 49,
+						"y": 1,
+						"w": 22,
+						"h": 27
+					}
+				},
+				{
+					"filename": "adventurer-run-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 7,
+						"w": 25,
+						"h": 30
+					},
+					"frame": {
+						"x": 73,
+						"y": 1,
+						"w": 25,
+						"h": 30
+					}
+				},
+				{
+					"filename": "adventurer-run-04.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 8,
+						"w": 22,
+						"h": 29
+					},
+					"frame": {
+						"x": 100,
+						"y": 1,
+						"w": 22,
+						"h": 29
+					}
+				},
+				{
+					"filename": "adventurer-run-05.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 15,
+						"y": 10,
+						"w": 22,
+						"h": 27
+					},
+					"frame": {
+						"x": 124,
+						"y": 1,
+						"w": 22,
+						"h": 27
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:5e9915b18fee32c286610c444c50eae5:3bbcdc559a08a9dea2a1ff7753e9c971:815f39d6bae3356713ad80da32a8e2c4$"
+	}
+}

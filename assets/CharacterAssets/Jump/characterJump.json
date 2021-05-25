@@ -1,0 +1,104 @@
+{
+	"textures": [
+		{
+			"image": "characterJump.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 25,
+				"h": 112
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "adventurer-jump-00.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 11,
+						"w": 22,
+						"h": 26
+					},
+					"frame": {
+						"x": 1,
+						"y": 1,
+						"w": 22,
+						"h": 26
+					}
+				},
+				{
+					"filename": "adventurer-jump-01.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 14,
+						"y": 13,
+						"w": 22,
+						"h": 24
+					},
+					"frame": {
+						"x": 1,
+						"y": 29,
+						"w": 22,
+						"h": 24
+					}
+				},
+				{
+					"filename": "adventurer-jump-02.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 16,
+						"y": 6,
+						"w": 21,
+						"h": 29
+					},
+					"frame": {
+						"x": 1,
+						"y": 55,
+						"w": 21,
+						"h": 29
+					}
+				},
+				{
+					"filename": "adventurer-jump-03.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 50,
+						"h": 37
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 4,
+						"w": 23,
+						"h": 25
+					},
+					"frame": {
+						"x": 1,
+						"y": 86,
+						"w": 23,
+						"h": 25
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:53afa730349f27c6d088f61254065986:f7a372b01baf85472b0567e59d65175b:93cf4d05ef3314c2b7408b42a6ca8190$"
+	}
+}
