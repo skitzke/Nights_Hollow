@@ -20,11 +20,10 @@ class Scene2 extends Phaser.Scene {
             delay: 0
         }
         this.add.text(50, 550, "Created By\nCaner Celik");
-        this.jack = this.add.sprite(380, 500, "jackRun");
-        var frameNames = this.textures.get('jackRun').getFrameNames();
-        console.log(frameNames);
-        this.jack.setScale(1.5);
-        this.jack.play("run");
+        var jack = this.add.sprite(380, 500, "jackRun").play("run");
+        // var frameNames = this.textures.get('jackRun').getFrameNames();
+        // console.log(frameNames);
+        jack.setScale(1.5);
         this.menuMusic.play(musicConfig);
         this.start.setInteractive({
             useHandCursor:true

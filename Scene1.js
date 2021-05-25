@@ -13,11 +13,12 @@ class Scene1 extends Phaser.Scene {
         this.load.atlas("jackDead", "assets/CharacterAssets/Dead/characterDead.png", "assets/CharacterAssets/Dead/characterDead.json");
         this.load.audio("menuMusic", ["assets/Audio/Born_Soldier.mp3"]);
         this.load.image("gameBackground", "assets/PlatformAssets/BG.png");
-        this.load.image("tiles", "assets/PlatformAssets/dirt.png");
+        this.load.image("ground", "assets/PlatformAssets/dirt.png");
         this.load.tilemapTiledJSON('level1', "assets/PlatformAssets/level1.json");
+
     }
     create() {
-        this.scene.start("gameMenu");
+        this.scene.start("playGame");
         this.anims.create({
             key: 'run',
             frames: [{
@@ -40,6 +41,24 @@ class Scene1 extends Phaser.Scene {
                 frame: "adventurer-run-05.png"
             },],
             frameRate: 11,
+            repeat: -1
+        });
+        this.anims.create({
+            key: 'idle',
+            frames: [{
+                key: 'jackIdle',
+                frame: "adventurer-idle-00.png"
+            },{
+                key: 'jackIdle',
+                frame: "adventurer-idle-01.png"
+            }, {
+                key: 'jackIdle',
+                frame: "adventurer-idle-02.png"
+            },{
+                key: 'jackIdle',
+                frame: "adventurer-idle-03.png"
+            },],
+            frameRate: 6,
             repeat: -1
         });
     }
