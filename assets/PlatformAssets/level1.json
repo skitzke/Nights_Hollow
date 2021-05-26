@@ -33,19 +33,6 @@
          "tilecount":48,
          "tileheight":30,
          "tilewidth":30
-        }, 
-        {
-         "columns":4,
-         "firstgid":49,
-         "image":"Tiles\/Tile (14).png",
-         "imageheight":128,
-         "imagewidth":128,
-         "margin":0,
-         "name":"Tile (14)",
-         "spacing":0,
-         "tilecount":16,
-         "tileheight":30,
-         "tilewidth":30
         }],
  "tilewidth":30,
  "type":"map",
