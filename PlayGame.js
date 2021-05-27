@@ -1,4 +1,4 @@
-class Scene3 extends Phaser.Scene {
+class PlayGame extends Phaser.Scene {
     constructor() {
         super("playGame");
     }
@@ -7,6 +7,7 @@ class Scene3 extends Phaser.Scene {
         this.bg.setScale(0.5);
         this.platforms = this.physics.add.staticGroup();
         this.player = this.physics.add.sprite(100, 450, 'jackIdle');
+        this.enemy = this.physics.add.sprite(100, 450, 'jackIdle');
         this.player.setScale(1.5);
         this.player.setBounce(0.1);
         this.player.setCollideWorldBounds(true);
@@ -20,7 +21,12 @@ class Scene3 extends Phaser.Scene {
         this.physics.add.collider(this.player, this.platforms);
     }
 
+    enemyFollows () {
+        this.physics.moveToObject(this.enemy, this.player, 100);
+    }
+
     update(){
+        this.enemyFollows();
         this.cursors = this.input.keyboard.createCursorKeys();
         if (this.cursors.left.isDown)
         {

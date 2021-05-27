@@ -2,7 +2,7 @@
         width: 780,
         height: 600,
         backgroundColor: 0x000000,
-        scene: [Scene1, Scene2, Scene3],
+        scene: [GameMain, GameMenu, PlayGame],
         physics: {
             default: 'arcade',
             arcade: {
