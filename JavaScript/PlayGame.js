@@ -61,6 +61,7 @@ class PlayGame extends Phaser.Scene {
         if (this.life === 0){
             this.scene.start('gameOver');
             this.life = 3;
+            this.gameMusic.stop();
         }
     }
 
