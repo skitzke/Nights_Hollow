@@ -2,6 +2,11 @@ class PlayGame extends Phaser.Scene {
     constructor() {
         super("playGame");
         this.life = 3;
+        this.initialTime = 0;
+        this.text;
+        this.timedEvent;
+        this.highscore = 0;
+        this.newHighScore = 0;
     }
 
     create(){
@@ -51,21 +56,108 @@ class PlayGame extends Phaser.Scene {
             delay: 0
         }
         this.gameMusic.play(gameMusicConfig);
+        this.add.text(32, 96, 'High score: ' + this.newHighScore);
+        this.timerText = this.add.text(32, 64, 'Timer: ' + formatTime(this.initialTime));
+
+        // Each 1000 ms call onEvent
+        this.timedEvent = this.time.addEvent({ delay: 1000, callback: onEvent, callbackScope: this, loop: true });
+
+        function formatTime(seconds){
+            // Minutes
+            var minutes = Math.floor(seconds/60);
+            // Seconds
+            var partInSeconds = seconds%60;
+            // Adds left zeros to seconds
+            partInSeconds = partInSeconds.toString().padStart(2,'0');
+            // Returns formated time
+            return `${minutes}:${partInSeconds}`;
+        }
+
+        function onEvent ()
+        {
+            this.initialTime += 1; // One second
+            this.timerText.setText('Timer: ' + formatTime(this.initialTime));
+        }
+
+        //A function i tried to make a group of enemies for
+        // function spawnEnemies()
+        // {
+        //     this.enemies1 = this.add.group();
+        //
+        //     for (let i = 0; i < 5; i++)
+        //     {
+        //         let x = Phaser.Math.Between(0, 400);
+        //         let y = Phaser.Math.Between(0, 600);
+        //
+        //         this.enemy1 = this.add.image(x, y, 'enemy');
+        //         this.enemies1.add(this.enemy1);
+        //     }
+        // }
     }
+
+    //Tried to make enemies spawn per time.
+    // spawnEnemies(enemy)
+    // {
+    //     enemy = this.add.group();
+    //
+    //     for (let i = 0; i < 5; i++)
+    //     {
+    //         let x = Phaser.Math.Between(0, 400);
+    //         let y = Phaser.Math.Between(0, 600);
+    //
+    //         this.enemy1 = this.add.image(x, y, 'enemy');
+    //         enemy.add(this.enemy1);
+    //     }
+    // }
 
     playerDie(player, enemy)
     {
         enemy.disableBody(true, true);
         this.life -= 1;
 
-        if (this.life === 0){
+        if (this.life === 0)
+        {
             this.scene.start('gameOver');
+            this.highscore = this.initialTime;
+            this.initialTime = 0;
             this.life = 3;
             this.gameMusic.stop();
         }
     }
 
     update () {
+        // Checking if the high score is not null.
+        if (this.highscore != null)
+        {
+            //Checking if the high score is higher than the new high score and if it is than replace it.
+            if (this.highscore >= this.newHighScore)
+            {
+                this.newHighScore = this.highscore;
+            }
+        }
+        else
+        {
+            //If it's null to add the high score as 0 until it isn't null anymore
+            this.add.text(32, 96, 'High score:  0');
+        }
+        // Adding a full wave of enemies towards the player at 30 seconds
+        if (this.initialTime === 30)
+        {
+
+            this.enemy1 = this.physics.add.sprite(400, 250, 'enemy');
+            this.physics.moveToObject(this.enemy1, this.player, 100);
+            this.physics.add.collider(this.enemy1, this.platforms);
+            this.physics.add.overlap(this.player, this.enemy1, this.playerDie, null, this);
+        }
+        // Adding a bigger wave of enemies towards the player at 60 seconds
+        else if (this.initialTime === 60)
+        {
+            this.enemy = this.physics.add.sprite(400, 200, 'enemy');
+            this.enemy.setScale(2);
+            this.physics.moveToObject(this.enemy, this.player, 100);
+            this.physics.add.collider(this.enemy, this.platforms);
+            this.physics.add.overlap(this.player, this.enemy, this.playerDie, null, this);
+        }
         this.lifeText.setText('Lives: ' + this.life);
         this.physics.moveToObject(this.enemy, this.player, 100);
         this.physics.moveToObject(this.enemy1, this.player, 100);
