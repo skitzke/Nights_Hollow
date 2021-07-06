@@ -158,6 +158,16 @@ class PlayGame extends Phaser.Scene {
             this.physics.add.collider(this.enemy, this.platforms);
             this.physics.add.overlap(this.player, this.enemy, this.playerDie, null, this);
         }
+        // Adding the biggest wave of enemies towards the player at 90 seconds
+        else if (this.initialTime === 90)
+        {
+            this.enemy = this.physics.add.sprite(400, 200, 'enemy');
+            this.enemy.setScale(4);
+            this.physics.moveToObject(this.enemy, this.player, 100);
+            this.physics.add.collider(this.enemy, this.platforms);
+            this.physics.add.overlap(this.player, this.enemy, this.playerDie, null, this);
+        }
+
         this.lifeText.setText('Lives: ' + this.life);
         this.physics.moveToObject(this.enemy, this.player, 100);
         this.physics.moveToObject(this.enemy1, this.player, 100);
