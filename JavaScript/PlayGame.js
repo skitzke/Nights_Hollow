@@ -150,7 +150,7 @@ class PlayGame extends Phaser.Scene {
             this.physics.add.overlap(this.player, this.enemy1, this.playerDie, null, this);
         }
         // Adding a bigger wave of enemies towards the player at 60 seconds
-        else if (this.initialTime === 60)
+        else if (this.initialTime === 45)
         {
             this.enemy = this.physics.add.sprite(400, 200, 'enemy');
             this.enemy.setScale(2);
@@ -159,10 +159,10 @@ class PlayGame extends Phaser.Scene {
             this.physics.add.overlap(this.player, this.enemy, this.playerDie, null, this);
         }
         // Adding the biggest wave of enemies towards the player at 90 seconds
-        else if (this.initialTime === 90)
+        else if (this.initialTime === 60)
         {
             this.enemy = this.physics.add.sprite(400, 200, 'enemy');
-            this.enemy.setScale(4);
+            this.enemy.setScale(3);
             this.physics.moveToObject(this.enemy, this.player, 100);
             this.physics.add.collider(this.enemy, this.platforms);
             this.physics.add.overlap(this.player, this.enemy, this.playerDie, null, this);
